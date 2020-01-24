@@ -1,0 +1,90 @@
+body {
+  background-color: lightpink;
+}
+
+.ttt ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lime;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: yellow;
+  font-size: 170px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin: 0;
+
+}
+
+.marquee-container {
+  position:relative;
+}
+
+marquee {
+  content: "";
+  position: absolute;
+  bottom: 150px;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: yellow;
+  font-size: 570px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin: 0;
+}
+
+.ttt li {
+  display: block;
+  width: 190px;
+  height: 190px;
+  background-color: mediumaquamarine;
+  margin: 5px;
+  box-sizing: content-box;
+  color: white;
+  font-size: 220px;
+  text-align: center;
+  line-height: 200px;
+  font-family: 'Bangers', cursive;
+}
+
+.ttt .x-class {
+  background-color: darkcyan;
+}
+
+.ttt .o-class {
+  background-color: darkcyan;
+}
+
+.ttt li:hover {
+  background-color: yellow;
+}
+
+.ttt .winner {
+  background-color: purple;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); color: red; }
+  10% { transform: translate(-1px, -2px) rotate(-5deg); color: red; }
+  20% { transform: translate(-3px, 0px) rotate(5deg);  color: purple;}
+  30% { transform: translate(3px, 2px) rotate(0deg); color: purple;}
+  40% { transform: translate(1px, -1px) rotate(5deg); color: yellowgreen;}
+  50% { transform: translate(-1px, 2px) rotate(-5deg); color: yellowgreen;}
+  60% { transform: translate(-3px, 1px) rotate(0deg); color: yellow;}
+  70% { transform: translate(3px, 1px) rotate(-5deg); color: yellow;}
+  80% { transform: translate(-1px, -1px) rotate(5deg); color: orange;}
+  90% { transform: translate(1px, 2px) rotate(0deg); color: orange;}
+  100% { transform: translate(1px, -2px) rotate(-5deg); color: firebrick;}
+  
+}
